@@ -3,14 +3,14 @@
 # Member information
 Spring 2020  
 Vincent Trejo - vtrej003@ucr.edu
-Member 2
+Ricardo Lira - rlira004@ucr.edu
 member 3
 
 # Title of project
-## CS100 RPG Game "work in progress"
+## CS100 ASCII QUEST 
 
 # What app do you plan to work on? 
-"The program" is a text-based role playing game. Inspired by old-school classic role playing game, "game name" is comprised of of multiple rpg elements; turn base combat system, character customization, "weapon"?, "spells"? 
+ASCII QUEST is a dungeon crawling role playing game. Inspired by old-school classic terminal based graphics. "game name" is comprised of of multiple rpg elements; turn base combat system, character customization, "weapon"?, "spells"? 
 
 # Why is it important and interesting?
 Important? Interesting?
