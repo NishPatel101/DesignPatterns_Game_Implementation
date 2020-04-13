@@ -4,7 +4,7 @@
 Spring 2020  
 Vincent Trejo - vtrej003@ucr.edu
 Ricardo Lira - rlira004@ucr.edu
-Nish ??? - ???@ucr.edu
+Nish Patel - npate145@ucr.edu
 
 # Title of project
 ## CS100 RPG Game "ASCII Quest"
