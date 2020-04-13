@@ -10,7 +10,7 @@ Nish ??? - ???@ucr.edu
 ## CS100 RPG Game "ASCII Quest"
 
 # What app do you plan to work on? 
-"The program" is a text-based role playing game. Inspired by old-school classic role playing games, "ASCII Quest" is comprised of of multiple rpg elements; turn base combat system, character customization, "weapon"?, "spells"? 
+"ASCII Quest" is a text-based role playing game. Inspired by old-school classic role playing games, "ASCII Quest" is comprised of of multiple rpg elements; turn base combat system, character customization, "weapons" and "spells".
 
 # Why is it important and interesting?
 Important?
@@ -21,9 +21,9 @@ Interesting?
   From a non-technical outlook, it is interesting because it is a very creative side of computer science.
 
 # What language/tools/technology you plan to use?
-  "ASCII Quest" is developed in with c++ language. Vim... others text editor? . 
+  We plan on using C++ and the terminal. 
 
-#What will be the input/output of your project?
+# What will be the input/output of your project?
   The input will be a series of button presses for navigation, such as "WASD" or the Up/Down/Left/Right arrow keys. Alternatively, in combat the user will be given a text based menu indicating what options they have to utilitize as well as information about the target they are fighting. Similar buttons will be used to navigate the menu, but this will also include the "enter" key to confirm commands and "backspace" to go back.
 
   Output will be a GUI showing where the character is on the map. In combat, the output will be monster stats as well as character stats. There will also be text streams indicating what actions are taking place and their effects.
