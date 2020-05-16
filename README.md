@@ -30,6 +30,8 @@ Interesting?
 
 
 ## Class diagram of your project
+![GitHub Logo](ASCII_RPG_Diagram.png)
+
 
 
 ## Description of class diagram 
