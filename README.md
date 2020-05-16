@@ -44,7 +44,7 @@ Composite Pattern (GUI)
 **GameText**- class inherits from the Graphics class and is a concrete object of the composite pattern. The GameText displays information from interactions with the environment and/or combat system. The GameText class is called to draw the scene by the composite(window) class.
 
 
-Strategy (Combat)
+**Strategy (Combat)**
 When Combat begins, the Combat System class gets the Player data (attack, hp, def) and uses these variables to create a combat encounter. It uses the Strategy Pattern since Combat utilizes different options.
     First, it uses the **Populate** class to construct a battle **Menu**(); that gives the player options to take.
     When an attack is selected, **Battle** commences and it calls the appropriate damage factors and calculates **Damage**(); for both the Player Character and the Enemy Creature and deducts it from their hp pool.
