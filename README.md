@@ -36,8 +36,7 @@ Interesting?
 
 ## Description of class diagram 
 
-Composite Pattern (GUI)
-
+**Composite Pattern (GUI)**
 **Abstract Graphics**- class is the base class for all of the graphical components of ASCII RPG.. Three subclasses inherit from the graphics class; Window class, Worldview,GameText. Each class has its own implementation of Draw().
 **Window**- class is the composition object of the graphics hierarchy. The window is composed of a world view object and a gametext object. This class will periodically call the Draw function to update the displays.
 **WorldView**- class inherits from the Graphics class and is a concrete object of the composite pattern. World views purpose is to display the world of ASCII RPG along with the characters that inhabit it. The world view class is called to draw the scene by the composite(Window) class.
