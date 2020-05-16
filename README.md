@@ -29,3 +29,7 @@ Interesting?
   Output will be a GUI showing where the character is on the map. In combat, the output will be monster stats as well as character stats. There will also be text streams indicating what actions are taking place and their effects.
 
 
+##Class diagram of your project
+
+
+##Description of class diagram 
