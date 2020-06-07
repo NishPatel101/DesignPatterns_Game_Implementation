@@ -2,4 +2,7 @@
 
 WorldGui::WorldGui(){};
 
-virtual void WorldGui::draw(){};
+virtual void WorldGui::draw()
+{
+
+}
