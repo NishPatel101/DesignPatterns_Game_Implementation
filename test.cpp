@@ -55,6 +55,7 @@ void printArea()
   for(int i = 0; i < 20; i++)
   {
       printw("%s\n", map[i].c_str());
+      refresh();
   }
   
 }
