@@ -9,19 +9,12 @@ using namespace std;
 
 class Deadly : public EquipmentDecorator {
 public:
-	Deadly(Equipment* obj) : EquipmentDecorator(obj) {}
+	Deadly(Equipment*);
 
-	string getDescription() {
-		return "Deadly " + e->getDescription() + "\nThis weapon is deadly, so it has a lot more attack power.";
-	}
+	string getDescription();
 
-	int getDefense() {
-		return 0; //Not implemented yet
-	}
+	int getDefense();
 
-	int getDamage() {
-		return e->getDamage() + 5;
-	}
+	int getDamage();
 };
 #endif
-
