@@ -3,91 +3,128 @@
 #include <string>
 #include <vector>
 #include <unistd.h>
+
+
 std::vector<std::string>map(100);
-std::vector<std::string> loadMap();
-void printArea(WINDOW*);
+std::vector<std::string>logo(100);
+std::vector<std::string> loadFile(std::string);
+
+void printWorld(WINDOW*);
+void printAction(WINDOW*);
+void printLogo(WINDOW*);
+void printChat(WINDOW*);
 
 int main(int argc, char**argv) 
 {
   initscr();
   start_color();
   init_pair(1,COLOR_BLACK,COLOR_RED);
-  //attron(COLOR_PAIR(1));
-  //printw("hello world");
-  //attroff(COLOR_PAIR(1));
-  
-  //refresh();
-
+  init_pair(2,COLOR_GREEN,COLOR_BLACK);
   noecho();
   cbreak();
-  //
+
   int yMax,xMax;
-  getmaxyx(stdscr,yMax, xMax);
-  WINDOW * leftWin = newwin(yMax/2,(xMax/2)-2,0,0);
-  WINDOW * rightWin = newwin(yMax/2,(xMax/2)-2,0,xMax/2);
-  wbkgd(leftWin, COLOR_PAIR(1));
-  //wbkgd(WindowName, COLOR_PAIR(1))
+  getmaxyx(stdscr,yMax,xMax);
+
+  map = loadFile("map1.txt");
+  logo = loadFile("logo1.txt");
+  int logoHeight = logo.size() + 1;
+  int logStartYpos = logo.size() + yMax/2 + 1;
+
+
+
+  WINDOW * leftWin = newwin(yMax/2,(xMax/2),logoHeight + 1,0);
+  WINDOW * rightWin = newwin(yMax/2,(xMax/2),logoHeight + 1,(xMax/2)+1);
+  WINDOW * chatWin = newwin(yMax - logStartYpos, xMax,logStartYpos,0);
+  WINDOW * logoWin = newwin(logoHeight, xMax/3, 0,xMax/3);
+
+
+  box(leftWin,0,0);
+  box(rightWin,0,0);
+  box(chatWin,0,0);
+  //box(logoWin,0,0);
+  //wbkgd(leftWin, COLOR_PAIR(1));
+
   refresh();
   wrefresh(leftWin);
   wrefresh(rightWin);
- 
-  map = loadMap();
+  wrefresh(chatWin);
+  wrefresh(logoWin);
  
   
-  //wprintw(leftWin,"yMAX:%d",xMax);
-  
-  //wprintw(rightWin,"xMax:%d",yMax);
-  //wrefresh(leftWin);
-  //wrefresh(rightWin);
-  printArea(leftWin);
-  printArea(rightWin);
+  printWorld(leftWin);
+  printAction(rightWin);
+  wattron(logoWin,COLOR_PAIR(2));
+  printLogo(logoWin);
+  printChat(chatWin);
 
   refresh();
   sleep(4);
   int c = getch();
-  //printw("%c",c);
   endwin();
 
   return 0;
 }
+void setup()
+{
 
-std::vector<std::string> loadMap()
+
+}
+std::vector<std::string> loadFile(std::string file)
 {	
     std::string line;
-        std::ifstream file("map1.txt");
+        std::ifstream readFile(file);
 	std::vector<std::string>temp;
-	while(std::getline(file,line))
+	while(std::getline(readFile,line))
 	{
            temp.push_back(line);
 	}
     return temp;
 }
 
-void printArea(WINDOW * win)
+
+void printLogo(WINDOW *win)
+{
+    int row, col;
+    char * c;
+    
+    for(row = 0; row < logo.size(); row++)
+    {
+	for(col = 0; col < logo[row].size(); col++)
+	{
+	    c = &logo[row].at(col);
+            mvwprintw(win, row + 1, col + 1, "%c", *c);
+	}
+    }
+    wrefresh(win);  
+}
+
+void printWorld(WINDOW * win)
 { 
     int row, col;
     char * c;
-    //mvwprintw(win,row+ 25,0,c);
-    for(row = 0; row < 20; row++)
+    int winX,winY;
+    getyx(win,winY,winX);
+
+    for(row = 0; row < 30; row++)
     {
-	//wprintw(win, "%c", map[0].at(0));
-
-	for(col = 0; col < 10; col++)
+	for(col = 0; col < 60; col++)
 	{
-	    &c = map[row].at(col);
-            mvwprintw(win, row, col, "%c", *c);
-
-	    /*if( == 0)
-	    {
-	     	  mvwprintw(win,row, col, " ");
-	    }
-	    else
-	    {
-		mvwprintw(win,row, col,"%s", c);    
-                //wrefresh(win);
-	    }*/
+	    c = &map[row].at(col);
+            mvwprintw(win, row + 1, col + 30, "%c", *c);
 	}
-
     }
     wrefresh(win);  
+}
+
+void printAction(WINDOW* win)
+{
+    mvwprintw(win,1,1,"%s","I'm Mr. Meeseeks, look at me!");
+    wrefresh(win);
+}
+
+void printChat(WINDOW* win)
+{
+    mvwprintw(win, 10, 50, "%s", " DEBUG LOG CHAT AREA");
+    wrefresh(win);
 }
