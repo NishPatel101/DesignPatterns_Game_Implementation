@@ -1,4 +1,4 @@
-#include "..header/Mighty.h"
+#include "../header/Mighty.h"
 
 using namespace std;
 
