@@ -1,11 +1,15 @@
 #ifndef __WORLDGUI_H__
 #define __WORLDGUI_H__
-#include "Graphic.h"
+#include "graphics.h"
 
-class WorldGui : Graphic
+class WorldGui : public Graphics
 {
     public:
-        WorldGui()
+        WorldGui(int winY, int winX, int startPosY, int startPosX, std::vector<std::string>) : Graphics();
 	virtual void draw();
-}
-#endif __WORLDGUI_H__
+	void setMap(std::vector<std::string>);
+    private:
+	WINDOW* win;
+	std::vector<std::string>map;
+};
+#endif //__WORLDGUI_H__

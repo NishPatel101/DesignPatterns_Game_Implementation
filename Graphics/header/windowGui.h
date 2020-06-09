@@ -1,13 +1,17 @@
 #ifndef __WINDOWGUI_H__
 #define __WINDOWGUI_H__
-#include "Graphic.h"
 
-class WindowGui : Graphic
+#include "graphics.h"
+
+class WindowGui : public Graphics
 {
     public:
-        WindowGui()
+        WindowGui() : Graphics();
+	WindowGui(Graphics*, Graphics*) : Graphics();
 	virtual void draw();
     protected:
-	Graphics * components;
-}
-#endif __WINDOWGUI_H__
+	Graphics * worldWin;
+	Graphics * actionWin;
+
+};
+#endif //__WINDOWGUI_H__
