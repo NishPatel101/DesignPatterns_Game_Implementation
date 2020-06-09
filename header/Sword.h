@@ -9,16 +9,10 @@ using namespace std;
 
 class Sword : public Equipment {
 	public:
-		string getDescription() {
-			return "Sword: the tried-and-true weapon!\nThis weapon has consistent, high damage output.";
-		}
+		string getDescription();
 
-		int getDefense() {
-			return 0; //Not implemented yet
-		}
+		int getDefense();
 
-		int getDamage() {
-			return 5;
-		}
+		int getDamage();
 };
 #endif
