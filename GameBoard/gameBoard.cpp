@@ -1,8 +1,8 @@
 #include "gameBoard.h"
 
-GameBoard::GameBoard()
+GameBoard::GameBoard(std::vector<std::string>map)
 {
-
+    gameMap = map;
 }
 
 void GameBoard::loadMap(std::vector<std::string> map)
@@ -58,6 +58,8 @@ void GameBoard::setGuiObject(Graphics* gui)
 
 void GameBoard::updateGuiMap()
 {
+    gameMap[5].at(5) = 'x';
     world->setMap(gameMap);
+    world->draw();
 }
 

@@ -5,10 +5,10 @@
 class WorldGui : public Graphics
 {
     public:
-        WorldGui(int winY, int winX, int startPosY, int startPosX);
+        WorldGui(int winY, int winX, int startPosY, int startPosX,std::vector<std::string>);
 	virtual void draw();
 	//HardCouple with gameboard
-	virtual void setMap(std::vector<std::string>);
+	void setMap(std::vector<std::string>);
     private:
 	WINDOW* win;
 	std::vector<std::string>map;

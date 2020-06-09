@@ -1,12 +1,12 @@
 #include "../header/worldGui.h"
 
-WorldGui::WorldGui(int height, int width, int posY, int posX) : Graphics()
+WorldGui::WorldGui(int height, int width, int posY, int posX, std::vector<std::string>tempMap) : Graphics()
 {
     winY = height;
     winX = width;
     startPosY = posY;
     startPosX = posX;
-    
+    setMap(tempMap);
     win = newwin(height, width, posY, posX);
     box(win,0,0);
 };

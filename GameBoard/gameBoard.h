@@ -7,10 +7,12 @@
 #include "../Graphics/header/worldGui.h"
 
 class PlayerController;
+class Graphics;
+
 class GameBoard
 {
     public:
-	GameBoard();
+	GameBoard(std::vector<std::string>);
 	void loadMap(std::vector<std::string>);
 	
 	//coupling hard

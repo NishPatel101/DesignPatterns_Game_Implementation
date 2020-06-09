@@ -29,41 +29,43 @@ int main(int argc, char**argv)
     getmaxyx(stdscr,yMax,xMax);
     std::vector<std::string> temp;
     refresh();
-    
+    printw("%d,%d",yMax,xMax);
+    refresh();
+
     //setup logo window
     temp = file.loadVector("Images/logo1.txt");
     Graphics * logoWin = new ImagesGui(temp.size()+2,xMax/3,0,xMax/3, temp);
     allWin.push_back(logoWin);
-    
+    refresh();
     //setup world window
-    Graphics * worldWin = new WorldGui(yMax/2, xMax/2, logoWin->getWinY()+1,0);
+    temp = file.loadVector("Images/map1.txt");
+    Graphics * worldWin = new WorldGui(yMax/2, xMax/2, logoWin->getWinY()+1,0,temp);
     allWin.push_back(worldWin);
-    
+    refresh();
     //setp up action window
     Graphics * actionWin = new ActionGui(yMax/2,xMax/2,logoWin->getWinY()+1, xMax/2+1);
     allWin.push_back(actionWin);
-    
+    refresh();
     //set up debug/log/chat
     int y = logoWin->getWinY() + worldWin->getWinY() + 1;
     Graphics * chatWin = new TextGui(yMax - y,xMax, y, 0);
     allWin.push_back(chatWin);
-
+    refresh();
 
     //GameBoard set up
-    /*GameBoard * gameBoard;
-    temp = file.loadVector("Images/map1.txt");
-    gameBoard->loadMap(temp);
+    GameBoard * gameBoard = new GameBoard(temp);
     gameBoard->setGuiObject(worldWin);
-    gameBoard->updateGuiMap();
-    */
+    //gameBoard->updateGuiMap();
+    
     //create the composite graphics window
     
     Graphics * gameWin = new WindowGui(allWin);
     gameWin->draw();
-
-    sleep(4);
-    int d = getch();
     
+    int d = getch();
+    gameBoard->updateGuiMap();
+    gameWin->draw();
+    int e = getch();
     endwin();
     return 0;
 }
