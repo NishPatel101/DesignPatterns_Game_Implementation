@@ -3,20 +3,11 @@
 
 #include "Battle.h"
 
-class UserInput {
-    protected:
-    char tempUserInput;
-    
+class UserInput : public Battle {
     public:
-        /* Constructors */
-        UserInput();
-        UserInput(char input);
-        
-        /* Logic */
-        void performAction();
-        
-        /* Pure Virtual Functions */
-        virtual void battle(Character* player, Character* enemy) = 0;
+    char tempUserInput;
+    UserInput() : Battle(){};
+    virtual void battle(Character* player, Character* enemy);
 };
 
 #endif //__USERINPUT_H__
