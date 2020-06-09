@@ -1,4 +1,4 @@
-#include "..header/Sword.h"
+#include "../header/Sword.h"
 
 using namespace std;
 
