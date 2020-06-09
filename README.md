@@ -30,7 +30,7 @@ Interesting?
 
 
 ## Class diagram of the project
-![GitHub Logo](ASCII_RPG_Diagram.png)
+![GitHub Logo](ASCII_RPG_Diagram2.png)
 
 
 
@@ -43,11 +43,8 @@ Interesting?
 **GameText** class inherits from the Graphics class and is a concrete object of the composite pattern. The GameText displays information from interactions with the environment and/or combat system. The GameText class is called to draw the scene by the composite(window) class.
 
 
-**Strategy (Combat)**:
-When Combat begins, the Combat System class gets the Player data (attack, hp, def) and uses these variables to create a combat encounter. It uses the Strategy Pattern since Combat utilizes different options.
-    First, it uses the **Populate** class to construct a battle **Menu**(); that gives the player options to take.
-    When an attack is selected, **Battle** commences and it calls the appropriate damage factors and calculates **Damage**(); for both the Player Character and the Enemy Creature and deducts it from their hp pool.
-    The **Win/Lose** condition is triggered when one of the combating entities reaches 0 hp, to symbolize death/fainting. Depending on who was slain, **Death**(); would then either return “Monster Slain” or “Game Over.”
+**Visitor (Combat)**:
+When Combat begins, the BattleVisitor class gets the Player data (attack and health) and uses these variables to create a combat encounter. It uses the Visitor Pattern since Combat is essentially an extension of the Character class. It calls doBattle() to start the “Combat Loop.” The “Combat Loop” consists of getting the Player and Enemy data (which are Characters*) and **while** both Player and Enemy are alive (meaning that their Health is greater than 0) and the “Run” option has not been selected, our Characters* attack each other. The Player gets to choose if they attack or run, if they select attack, it will **doDamage()** meaning that the Player’s damage statistic will be deducted from the Enemy’s health pool. If the monster is still alive, it will then retaliate with its own damage statistic against the Player’s health pool. Once either Character* goes below 1 Health point, the battle is over and a victor is decided.
     
 **Character**:
     This class is used for the internal properties of both the user and enemy characters in-game. Every character has basic qualities such as a name, health and equipment; the name is a string, the health is an integer and equipment is instantiated as equipment objects from the class explained below. For internal use between other classes of this project, accessor and mutator functions have been made for the member variables. Additionally, each character can receive damage that deducts from their health during battle. The characters (mainly the user) can also receive new equipment during their journey.
