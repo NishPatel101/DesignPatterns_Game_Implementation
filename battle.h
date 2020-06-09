@@ -8,14 +8,9 @@ class Battle {
     public:
         /* Constructors */
         Battle();
-        Battle(Character* player, Character* enemy);
-        
-//	/* Variables */
-//        getHealth();
-//        getDamage();
-        
+
         /* Pure Virtual Functions */
-        virtual void battle(Character* player, Character* enemy) = 0;
+        virtual void doBattle(Character* player, Character* enemy) = 0;
 };
 
 #endif //__BATTLE_H__
