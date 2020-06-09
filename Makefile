@@ -288,6 +288,60 @@ Graphics/src/graphics.cpp.s:
 	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Graphics/src/graphics.cpp.s
 .PHONY : Graphics/src/graphics.cpp.s
 
+Graphics/src/imagesGui.o: Graphics/src/imagesGui.cpp.o
+
+.PHONY : Graphics/src/imagesGui.o
+
+# target to build an object file
+Graphics/src/imagesGui.cpp.o:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Graphics/src/imagesGui.cpp.o
+.PHONY : Graphics/src/imagesGui.cpp.o
+
+Graphics/src/imagesGui.i: Graphics/src/imagesGui.cpp.i
+
+.PHONY : Graphics/src/imagesGui.i
+
+# target to preprocess a source file
+Graphics/src/imagesGui.cpp.i:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Graphics/src/imagesGui.cpp.i
+.PHONY : Graphics/src/imagesGui.cpp.i
+
+Graphics/src/imagesGui.s: Graphics/src/imagesGui.cpp.s
+
+.PHONY : Graphics/src/imagesGui.s
+
+# target to generate assembly for a file
+Graphics/src/imagesGui.cpp.s:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Graphics/src/imagesGui.cpp.s
+.PHONY : Graphics/src/imagesGui.cpp.s
+
+Graphics/src/textGui.o: Graphics/src/textGui.cpp.o
+
+.PHONY : Graphics/src/textGui.o
+
+# target to build an object file
+Graphics/src/textGui.cpp.o:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Graphics/src/textGui.cpp.o
+.PHONY : Graphics/src/textGui.cpp.o
+
+Graphics/src/textGui.i: Graphics/src/textGui.cpp.i
+
+.PHONY : Graphics/src/textGui.i
+
+# target to preprocess a source file
+Graphics/src/textGui.cpp.i:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Graphics/src/textGui.cpp.i
+.PHONY : Graphics/src/textGui.cpp.i
+
+Graphics/src/textGui.s: Graphics/src/textGui.cpp.s
+
+.PHONY : Graphics/src/textGui.s
+
+# target to generate assembly for a file
+Graphics/src/textGui.cpp.s:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Graphics/src/textGui.cpp.s
+.PHONY : Graphics/src/textGui.cpp.s
+
 Graphics/src/windowGui.o: Graphics/src/windowGui.cpp.o
 
 .PHONY : Graphics/src/windowGui.o
@@ -447,6 +501,12 @@ help:
 	@echo "... Graphics/src/graphics.o"
 	@echo "... Graphics/src/graphics.i"
 	@echo "... Graphics/src/graphics.s"
+	@echo "... Graphics/src/imagesGui.o"
+	@echo "... Graphics/src/imagesGui.i"
+	@echo "... Graphics/src/imagesGui.s"
+	@echo "... Graphics/src/textGui.o"
+	@echo "... Graphics/src/textGui.i"
+	@echo "... Graphics/src/textGui.s"
 	@echo "... Graphics/src/windowGui.o"
 	@echo "... Graphics/src/windowGui.i"
 	@echo "... Graphics/src/windowGui.s"
