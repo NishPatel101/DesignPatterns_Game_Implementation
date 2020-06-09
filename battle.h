@@ -10,9 +10,9 @@ class Battle {
         Battle();
         Battle(Character* player, Character* enemy);
         
-	/* Variables */
-        getHealth();
-        getDamage();
+//	/* Variables */
+//        getHealth();
+//        getDamage();
         
         /* Pure Virtual Functions */
         virtual void battle(Character* player, Character* enemy) = 0;
