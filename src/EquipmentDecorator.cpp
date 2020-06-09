@@ -1,4 +1,4 @@
-#include "..header/EquipmentDecorator.h"
+#include "../header/EquipmentDecorator.h"
 
 using namespace std;
 
