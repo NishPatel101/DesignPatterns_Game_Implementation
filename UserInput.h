@@ -7,7 +7,7 @@ class UserInput : public Battle {
     public:
     char tempUserInput;
     UserInput() : Battle(){};
-    virtual void battle(Character* player, Character* enemy);
+    virtual void doBattle(Character* player, Character* enemy);
 };
 
 #endif //__USERINPUT_H__
