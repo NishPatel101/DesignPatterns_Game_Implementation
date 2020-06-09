@@ -9,19 +9,12 @@ using namespace std;
 
 class Flimsy : public EquipmentDecorator {
 	public:
-		Flimsy(Equipment* obj) : EquipmentDecorator(obj) {}
+		Flimsy(Equipment*);
 
-		string getDescription() {
-			return "Flimsy " + e->getDescription() + "\nThis weapon is flimsy, so it has a little more attack power.";
-		}
+		string getDescription();
 
-		int getDefense() {
-			return 0; //Not implemented yet
-		}
+		int getDefense();
 
-		int getDamage() {
-			return e->getDamage() + 2;
-		}
+		int getDamage();
 };
 #endif
-
