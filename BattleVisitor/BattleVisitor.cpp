@@ -42,6 +42,7 @@ void BattleVisitor::doBattle()
         userInput("Attack", Enemy, Player);//to simulate the Enemy Attack
         doDamage(Player, Enemy);
         doDamage(Enemy, Player);
+	update(std::to_string(Player->getHealth()),std::to_string(Enemy->getHealth()));
     }
     if(Player->getHealth() < 1)
     {
@@ -101,7 +102,7 @@ std::string BattleVisitor::BattleMenu()
 
 	    case KEY_DOWN:
                 highlight++;
-                if(highlight ==2)
+                if(highlight == 2)
 	        {
                     highlight = 1;
 	        }
@@ -117,8 +118,15 @@ std::string BattleVisitor::BattleMenu()
    }
     mvwprintw(menuWin,3,1,"%s",choices[highlight].c_str());
     wrefresh(menuWin);
+    refresh();
+    sleep(1);
     return choices[highlight];
 }
 
-
-
+void BattleVisitor::update(std::string pHealth, std::string eHealth)
+{
+    std::vector<std::string>temp;
+    temp.push_back(pHealth);
+    temp.push_back(eHealth);
+    actWin->setMap(temp);
+}

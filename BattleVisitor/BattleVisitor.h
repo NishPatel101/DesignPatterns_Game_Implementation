@@ -14,9 +14,11 @@ class BattleVisitor
         void runAway();
         void doBattle();
 	std::string BattleMenu();
+	void update(std::string,std::string);
     protected:
 	Character * Player;
 	Character * Enemy;
 	Graphics * actWin;
 	int run = 1;
+
 };
