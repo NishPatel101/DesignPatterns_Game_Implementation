@@ -1,4 +1,4 @@
-#include "../header/Character.hpp"
+#include "../header/Character.h"
 
 using namespace std;
 
