@@ -234,6 +234,60 @@ gtest/fast:
 	$(MAKE) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+BattleVisitor/BattleVisitor.o: BattleVisitor/BattleVisitor.cpp.o
+
+.PHONY : BattleVisitor/BattleVisitor.o
+
+# target to build an object file
+BattleVisitor/BattleVisitor.cpp.o:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/BattleVisitor/BattleVisitor.cpp.o
+.PHONY : BattleVisitor/BattleVisitor.cpp.o
+
+BattleVisitor/BattleVisitor.i: BattleVisitor/BattleVisitor.cpp.i
+
+.PHONY : BattleVisitor/BattleVisitor.i
+
+# target to preprocess a source file
+BattleVisitor/BattleVisitor.cpp.i:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/BattleVisitor/BattleVisitor.cpp.i
+.PHONY : BattleVisitor/BattleVisitor.cpp.i
+
+BattleVisitor/BattleVisitor.s: BattleVisitor/BattleVisitor.cpp.s
+
+.PHONY : BattleVisitor/BattleVisitor.s
+
+# target to generate assembly for a file
+BattleVisitor/BattleVisitor.cpp.s:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/BattleVisitor/BattleVisitor.cpp.s
+.PHONY : BattleVisitor/BattleVisitor.cpp.s
+
+Character/Character.o: Character/Character.cpp.o
+
+.PHONY : Character/Character.o
+
+# target to build an object file
+Character/Character.cpp.o:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Character/Character.cpp.o
+.PHONY : Character/Character.cpp.o
+
+Character/Character.i: Character/Character.cpp.i
+
+.PHONY : Character/Character.i
+
+# target to preprocess a source file
+Character/Character.cpp.i:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Character/Character.cpp.i
+.PHONY : Character/Character.cpp.i
+
+Character/Character.s: Character/Character.cpp.s
+
+.PHONY : Character/Character.s
+
+# target to generate assembly for a file
+Character/Character.cpp.s:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Character/Character.cpp.s
+.PHONY : Character/Character.cpp.s
+
 FileRead/fileReader.o: FileRead/fileReader.cpp.o
 
 .PHONY : FileRead/fileReader.o
@@ -549,6 +603,12 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... BattleVisitor/BattleVisitor.o"
+	@echo "... BattleVisitor/BattleVisitor.i"
+	@echo "... BattleVisitor/BattleVisitor.s"
+	@echo "... Character/Character.o"
+	@echo "... Character/Character.i"
+	@echo "... Character/Character.s"
 	@echo "... FileRead/fileReader.o"
 	@echo "... FileRead/fileReader.i"
 	@echo "... FileRead/fileReader.s"
