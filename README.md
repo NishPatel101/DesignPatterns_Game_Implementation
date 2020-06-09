@@ -37,23 +37,25 @@ Interesting?
 ## Description of class diagram 
 
 **Composite Pattern (GUI)**
-**Abstract Graphics**- class is the base class for all of the graphical components of ASCII RPG.. Three subclasses inherit from the graphics class; Window class, Worldview,GameText. Each class has its own implementation of Draw().
-**Window**- class is the composition object of the graphics hierarchy. The window is composed of a world view object and a gametext object. This class will periodically call the Draw function to update the displays.
-**WorldView**- class inherits from the Graphics class and is a concrete object of the composite pattern. World views purpose is to display the world of ASCII RPG along with the characters that inhabit it. The world view class is called to draw the scene by the composite(Window) class.
-**GameText**- class inherits from the Graphics class and is a concrete object of the composite pattern. The GameText displays information from interactions with the environment and/or combat system. The GameText class is called to draw the scene by the composite(window) class.
+**Abstract Graphics**: This class is the base class for all of the graphical components of ASCII RPG.. Three subclasses inherit from the graphics class; Window class, Worldview,GameText. Each class has its own implementation of Draw().
+**Window** class is the composition object of the graphics hierarchy. The window is composed of a world view object and a gametext object. This class will periodically call the Draw function to update the displays.
+**WorldView** class inherits from the Graphics class and is a concrete object of the composite pattern. World views purpose is to display the world of ASCII RPG along with the characters that inhabit it. The world view class is called to draw the scene by the composite(Window) class.
+**GameText** class inherits from the Graphics class and is a concrete object of the composite pattern. The GameText displays information from interactions with the environment and/or combat system. The GameText class is called to draw the scene by the composite(window) class.
 
 
-**Strategy (Combat)**
+**Strategy (Combat)**:
 When Combat begins, the Combat System class gets the Player data (attack, hp, def) and uses these variables to create a combat encounter. It uses the Strategy Pattern since Combat utilizes different options.
     First, it uses the **Populate** class to construct a battle **Menu**(); that gives the player options to take.
     When an attack is selected, **Battle** commences and it calls the appropriate damage factors and calculates **Damage**(); for both the Player Character and the Enemy Creature and deducts it from their hp pool.
     The **Win/Lose** condition is triggered when one of the combating entities reaches 0 hp, to symbolize death/fainting. Depending on who was slain, **Death**(); would then either return “Monster Slain” or “Game Over.”
     
+**Character**:
+    This class is used for the internal properties of both the user and enemy characters in-game. Every character has basic qualities such as a name, health and equipment; the name is a string, the health is an integer and equipment is instantiated as equipment objects from the class explained below. For internal use between other classes of this project, accessor and mutator functions have been made for the member variables. Additionally, each character can receive damage that deducts from their health during battle. The characters (mainly the user) can also receive new equipment during their journey.
 
-**Decorator (Equipment)**
+**Decorator (Equipment)**:
     Each character (player and enemies) has equipment. This includes a weapon with an optional title that increases damage. The user can use either a **Sword** or an **Axe**, and each has different properties in combat. There are additional titles that can influence the power of the weapon, namely **Flimsy**, **Mighty**, and **Deadly**.
     In terms of the general structure of the decorator design pattern, each class serves to easily add functionality (titles) to the equipment objects (weapons). 
     The component is **Equipment**. This class is a base for the other subcategories of equipment. It has member variables Weapon (string) and Damage (int), as well as public functions getDescription (returns a description of the equipment as a string), getDefense (returns an integer value of the defense stat based on equipped items), and getDamage (returns an integer value of the attack power stat). 
-    The concrete components are **Sword** and **Axe**. These classes are each defined with different damage integer values -  swords do higher base damage and axes do lower base damage but have a 1/10 chance to land a critical hit. Each class has a getDamage function (returns an integer value of the damage output based on the member variable).
+    The concrete components are **Sword** and **Axe**. These classes are each defined with different damage integer values -  swords do higher base damage and axes do lower base damage but have a 1/10 chance to land a critical hit (edited from UML to a more reasonable rate). Each class has a getDamage function (returns an integer value of the damage output based on the member variable).
     The abstract decorator is **Equipment Decorator**. 
     The concrete decorators are **Flimsy**, **Mighty**, and **Deadly**. Each of these adds extra damage to the weapon as indicated: flimsy (+2), mighty (+3), and deadly (+5).
