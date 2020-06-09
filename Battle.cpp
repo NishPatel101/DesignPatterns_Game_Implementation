@@ -1,7 +1,3 @@
-#ifndef __BATTLE_CPP__
-#define __BATTLE_CPP__
-
-
 #include "Battle.h"
 
         /* Constructors */
@@ -16,5 +12,3 @@ Battle::Battle()(Character* player, Character* enemy) {
 //        Battle::getDamage();
 //  /* Pure Virtual Functions */
         virtual void battle(Character* player, Character* enemy) = 0;
-
-#endif //__BATTLE_CPP__
