@@ -1,11 +1,11 @@
-//Battle.h
-//#include "Character.h"
+#include "../Character/Character.h"
+#include "../Equipment/header/EquipmentDecorator.h"
 
-class doBattle {
+class doBattle : public Character {
         public:
-    getHP();
-    userInput();
-    doDamage();
-    runAway();
-    doBattle(Character* Player, Character* Enemy);
+    int getHealth(Character* Creature);
+    void userInput(char input, Character* Attacker, Character* Target);
+    void doDamage(Character* Attacker, Character* Target);
+    void runAway();
+    void doBattle(Character* Player, Character* Enemy);
 };
