@@ -1,7 +1,8 @@
 #ifndef CHARACTER_H
 #define CHARACTER_H
 
-#include "Equipment.h"
+#include "../Equipment/header/Axe.h"
+#include "../Equipment/header/Sword.h"
 
 using namespace std;
 

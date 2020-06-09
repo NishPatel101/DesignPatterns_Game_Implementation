@@ -19,6 +19,18 @@
 #include "BattleVisitor/BattleVisitor.h"
 //=====================================
 #include "Character/Character.h"
+#include "Equipment/header/Equipment.h"
+#include "Equipment/header/Axe.h"
+#include "Equipment/header/Deadly.h"
+#include "Equipment/header/EquipmentDecorator.h"
+#include "Equipment/header/Flimsy.h"
+#include "Equipment/header/Mighty.h"
+#include "Equipment/header/Sword.h"
+
+
+
+
+
 void battleMenu();
 
 int main(int argc, char**argv)

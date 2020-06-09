@@ -19,7 +19,12 @@ ADD_EXECUTABLE(gameAsciiRpg
 	BattleVisitor/BattleVisitor.cpp
 	Character/Character.cpp
 	FileRead/fileReader.cpp
-
+	Equipment/src/Axe.cpp
+	Equipment/src/Deadly.cpp
+	Equipment/src/EquipmentDecorator.cpp
+	Equipment/src/Flimsy.cpp
+	Equipment/src/Mighty.cpp
+	Equipment/src/Sword.cpp
 )
 
 ADD_EXECUTABLE(runUnitTest

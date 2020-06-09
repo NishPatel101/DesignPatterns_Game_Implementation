@@ -288,6 +288,168 @@ Character/Character.cpp.s:
 	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Character/Character.cpp.s
 .PHONY : Character/Character.cpp.s
 
+Equipment/src/Axe.o: Equipment/src/Axe.cpp.o
+
+.PHONY : Equipment/src/Axe.o
+
+# target to build an object file
+Equipment/src/Axe.cpp.o:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/Axe.cpp.o
+.PHONY : Equipment/src/Axe.cpp.o
+
+Equipment/src/Axe.i: Equipment/src/Axe.cpp.i
+
+.PHONY : Equipment/src/Axe.i
+
+# target to preprocess a source file
+Equipment/src/Axe.cpp.i:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/Axe.cpp.i
+.PHONY : Equipment/src/Axe.cpp.i
+
+Equipment/src/Axe.s: Equipment/src/Axe.cpp.s
+
+.PHONY : Equipment/src/Axe.s
+
+# target to generate assembly for a file
+Equipment/src/Axe.cpp.s:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/Axe.cpp.s
+.PHONY : Equipment/src/Axe.cpp.s
+
+Equipment/src/Deadly.o: Equipment/src/Deadly.cpp.o
+
+.PHONY : Equipment/src/Deadly.o
+
+# target to build an object file
+Equipment/src/Deadly.cpp.o:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/Deadly.cpp.o
+.PHONY : Equipment/src/Deadly.cpp.o
+
+Equipment/src/Deadly.i: Equipment/src/Deadly.cpp.i
+
+.PHONY : Equipment/src/Deadly.i
+
+# target to preprocess a source file
+Equipment/src/Deadly.cpp.i:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/Deadly.cpp.i
+.PHONY : Equipment/src/Deadly.cpp.i
+
+Equipment/src/Deadly.s: Equipment/src/Deadly.cpp.s
+
+.PHONY : Equipment/src/Deadly.s
+
+# target to generate assembly for a file
+Equipment/src/Deadly.cpp.s:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/Deadly.cpp.s
+.PHONY : Equipment/src/Deadly.cpp.s
+
+Equipment/src/EquipmentDecorator.o: Equipment/src/EquipmentDecorator.cpp.o
+
+.PHONY : Equipment/src/EquipmentDecorator.o
+
+# target to build an object file
+Equipment/src/EquipmentDecorator.cpp.o:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/EquipmentDecorator.cpp.o
+.PHONY : Equipment/src/EquipmentDecorator.cpp.o
+
+Equipment/src/EquipmentDecorator.i: Equipment/src/EquipmentDecorator.cpp.i
+
+.PHONY : Equipment/src/EquipmentDecorator.i
+
+# target to preprocess a source file
+Equipment/src/EquipmentDecorator.cpp.i:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/EquipmentDecorator.cpp.i
+.PHONY : Equipment/src/EquipmentDecorator.cpp.i
+
+Equipment/src/EquipmentDecorator.s: Equipment/src/EquipmentDecorator.cpp.s
+
+.PHONY : Equipment/src/EquipmentDecorator.s
+
+# target to generate assembly for a file
+Equipment/src/EquipmentDecorator.cpp.s:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/EquipmentDecorator.cpp.s
+.PHONY : Equipment/src/EquipmentDecorator.cpp.s
+
+Equipment/src/Flimsy.o: Equipment/src/Flimsy.cpp.o
+
+.PHONY : Equipment/src/Flimsy.o
+
+# target to build an object file
+Equipment/src/Flimsy.cpp.o:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/Flimsy.cpp.o
+.PHONY : Equipment/src/Flimsy.cpp.o
+
+Equipment/src/Flimsy.i: Equipment/src/Flimsy.cpp.i
+
+.PHONY : Equipment/src/Flimsy.i
+
+# target to preprocess a source file
+Equipment/src/Flimsy.cpp.i:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/Flimsy.cpp.i
+.PHONY : Equipment/src/Flimsy.cpp.i
+
+Equipment/src/Flimsy.s: Equipment/src/Flimsy.cpp.s
+
+.PHONY : Equipment/src/Flimsy.s
+
+# target to generate assembly for a file
+Equipment/src/Flimsy.cpp.s:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/Flimsy.cpp.s
+.PHONY : Equipment/src/Flimsy.cpp.s
+
+Equipment/src/Mighty.o: Equipment/src/Mighty.cpp.o
+
+.PHONY : Equipment/src/Mighty.o
+
+# target to build an object file
+Equipment/src/Mighty.cpp.o:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/Mighty.cpp.o
+.PHONY : Equipment/src/Mighty.cpp.o
+
+Equipment/src/Mighty.i: Equipment/src/Mighty.cpp.i
+
+.PHONY : Equipment/src/Mighty.i
+
+# target to preprocess a source file
+Equipment/src/Mighty.cpp.i:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/Mighty.cpp.i
+.PHONY : Equipment/src/Mighty.cpp.i
+
+Equipment/src/Mighty.s: Equipment/src/Mighty.cpp.s
+
+.PHONY : Equipment/src/Mighty.s
+
+# target to generate assembly for a file
+Equipment/src/Mighty.cpp.s:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/Mighty.cpp.s
+.PHONY : Equipment/src/Mighty.cpp.s
+
+Equipment/src/Sword.o: Equipment/src/Sword.cpp.o
+
+.PHONY : Equipment/src/Sword.o
+
+# target to build an object file
+Equipment/src/Sword.cpp.o:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/Sword.cpp.o
+.PHONY : Equipment/src/Sword.cpp.o
+
+Equipment/src/Sword.i: Equipment/src/Sword.cpp.i
+
+.PHONY : Equipment/src/Sword.i
+
+# target to preprocess a source file
+Equipment/src/Sword.cpp.i:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/Sword.cpp.i
+.PHONY : Equipment/src/Sword.cpp.i
+
+Equipment/src/Sword.s: Equipment/src/Sword.cpp.s
+
+.PHONY : Equipment/src/Sword.s
+
+# target to generate assembly for a file
+Equipment/src/Sword.cpp.s:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Equipment/src/Sword.cpp.s
+.PHONY : Equipment/src/Sword.cpp.s
+
 FileRead/fileReader.o: FileRead/fileReader.cpp.o
 
 .PHONY : FileRead/fileReader.o
@@ -609,6 +771,24 @@ help:
 	@echo "... Character/Character.o"
 	@echo "... Character/Character.i"
 	@echo "... Character/Character.s"
+	@echo "... Equipment/src/Axe.o"
+	@echo "... Equipment/src/Axe.i"
+	@echo "... Equipment/src/Axe.s"
+	@echo "... Equipment/src/Deadly.o"
+	@echo "... Equipment/src/Deadly.i"
+	@echo "... Equipment/src/Deadly.s"
+	@echo "... Equipment/src/EquipmentDecorator.o"
+	@echo "... Equipment/src/EquipmentDecorator.i"
+	@echo "... Equipment/src/EquipmentDecorator.s"
+	@echo "... Equipment/src/Flimsy.o"
+	@echo "... Equipment/src/Flimsy.i"
+	@echo "... Equipment/src/Flimsy.s"
+	@echo "... Equipment/src/Mighty.o"
+	@echo "... Equipment/src/Mighty.i"
+	@echo "... Equipment/src/Mighty.s"
+	@echo "... Equipment/src/Sword.o"
+	@echo "... Equipment/src/Sword.i"
+	@echo "... Equipment/src/Sword.s"
 	@echo "... FileRead/fileReader.o"
 	@echo "... FileRead/fileReader.i"
 	@echo "... FileRead/fileReader.s"
