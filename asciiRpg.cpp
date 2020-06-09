@@ -51,7 +51,7 @@ int main(int argc, char**argv)
 
     //setup logo window
     temp = file.loadVector("Images/logo1.txt");
-    Graphics * logoWin = new ImagesGui(temp.size()+2,xMax/3,0,xMax/3, temp);
+    Graphics * logoWin = new ImagesGui(temp.size()+2,xMax/3 + 8,0,xMax/3, temp);
     allWin.push_back(logoWin);
     refresh();
     //setup world window
@@ -89,7 +89,12 @@ int main(int argc, char**argv)
 
     BattleVisitor * fight = new BattleVisitor(player,enemy,actionWin);
     fight->doBattle();
-
+    sleep(1);
+    refresh();
+    chatWin->setMap(temp);
+    //mvprintw(yMax/2,(xMax/3)*2,"%s", "GG");
+    refresh();
+    sleep(1);
     char z = getch();
     endwin();
     return 0;

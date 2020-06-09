@@ -46,11 +46,12 @@ void BattleVisitor::doBattle()
     }
     if(Player->getHealth() < 1)
     {
-      //gameover!
+      // wprintw("%sa","I am glad this is over");
+
     }	
     else
     {
-      //Victory!
+      // wprintw("%s", "you win goodbye";
     }
 }
 

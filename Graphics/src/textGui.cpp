@@ -9,18 +9,20 @@ TextGui::TextGui(int height, int width, int posY, int posX) : Graphics()
     
     win = newwin(winY, winX, startPosY, startPosX);
     box(win,0,0);
+    map.push_back(" ");
 }
 
 void TextGui::draw()
 {
-    mvwprintw(win,1,1,"%s","I'm Mr. Meeseeks, look at me!");
+    mvwprintw(win,1,1,"%s",map[0].c_str());
 
     wrefresh(win);  
 }
 
 void TextGui::setMap(std::vector<std::string> temp)
 {
-    map = temp;
+    map[0] = "GGWP!";
+    draw();
 }
 
 
