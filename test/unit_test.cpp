@@ -1,7 +1,7 @@
 #include "gtest/gtest.h"
 
-#include "Character_test.h"
-#include "Equipment_test.h"
+#include "Character_test.cpp"
+#include "Equipment_test.cpp"
 
 int main(int argc, char **argv) {
   ::testing::InitGoogleTest(&argc, argv);

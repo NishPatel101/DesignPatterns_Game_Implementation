@@ -15,6 +15,7 @@ int BattleVisitor::getHealth(Character* Creature)
 
 void BattleVisitor::userInput(char input, Character* Attacker, Character* Target)
 {
+    BattleMenu();
     char tempUserInput = input;
     if(tempUserInput = 'a')//a is what I assume we are using for Attack? Not sure yet.
         doDamage(Attacker, Target);
@@ -33,7 +34,7 @@ void BattleVisitor::runAway()
     //cout "You got away!";
     run = 0;
 }
-void BattleVisitor::doBattle(Character* Player, Character* Enemy)
+void BattleVisitor::doBattle()
 {
     while((Player->getHealth() >= 1 && Enemy->getHealth() >= 1) && (run == 1))
     {
@@ -56,9 +57,9 @@ void BattleVisitor::BattleMenu()
     int ch, i = 0, width = 7;
  
     initscr(); // initialize Ncurses
-    w = newwin( actWin->getWinY/5, actWin->getWinX/5, actWin->getStartPosY + getActWinY/2, actWin->getStartPosX + getActWinX/2 ); // create a new window
+    w = newwin( actWin->getWinY()/5, actWin->getWinX()/5, actWin->getStartPosY() + actWin->getWinY()/2, actWin->getStartPosX() + actWin->getWinX()/2 ); // create a new window
     box( w, 0, 0 ); // sets default borders for the window
-     
+   
 // now print all the menu items and highlight the first one
     for( i=0; i<5; i++ ) {
         if( i == 0 ) 

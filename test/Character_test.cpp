@@ -1,11 +1,8 @@
-#ifndef CHARACTER_TEST_H
-#define CHARACTER_TEST_H
-
 #include "gtest/gtest.h"
 
-#include "../header/Character.h"
-#include "../header/Sword.h"
-#include "../header/Axe.h"
+#include "../Character/Character.h"
+#include "../Equipment/header/Sword.h"
+#include "../Equipment/header/Axe.h"
 
 TEST(CharacterTest, Getters1) {
         Equipment* s = new Sword();
@@ -64,4 +61,3 @@ TEST(CharacterTest, HurtEquip2) {
         EXPECT_EQ(test->getHealth(), -50);
         EXPECT_TRUE(damage == 3 || damage == 7);
 }
-#endif

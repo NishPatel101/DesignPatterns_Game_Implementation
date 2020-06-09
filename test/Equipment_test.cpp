@@ -3,11 +3,11 @@
 
 #include "gtest/gtest.h"
 
-#include "../header/Sword.h"
-#include "../header/Axe.h"
-#include "../header/Flimsy.h"
-#include "../header/Mighty.h"
-#include "../header/Deadly.h"
+#include "../Equipment/header/Sword.h"
+#include "../Equipment/header/Axe.h"
+#include "../Equipment/header/Flimsy.h"
+#include "../Equipment/header/Mighty.h"
+#include "../Equipment/header/Deadly.h"
 
 TEST(EquipmentTest, Sword) {
         Equipment* test = new Sword;
