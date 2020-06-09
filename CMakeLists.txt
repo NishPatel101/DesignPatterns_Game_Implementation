@@ -16,6 +16,8 @@ ADD_EXECUTABLE(gameAsciiRpg
 	Graphics/src/textGui.cpp
 	GameBoard/gameBoard.cpp
 	PlayerController/playerController.cpp
+	BattleVisitor/BattleVisitor.cpp
+	Character/Character.cpp
 	FileRead/fileReader.cpp
 
 )
