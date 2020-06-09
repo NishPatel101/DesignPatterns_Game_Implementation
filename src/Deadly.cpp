@@ -1,4 +1,4 @@
-#include "..header/Deadly.h"
+#include "../header/Deadly.h"
 
 using namespace std;
 
