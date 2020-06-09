@@ -1,6 +1,6 @@
-#include "../header/worldGui.h"
+#include "../header/imagesGui.h"
 
-WorldGui::WorldGui(int height, int width, int posY, int posX, std::vector<std::string>map) : Graphics()
+ImagesGui::ImagesGui(int height, int width, int posY, int posX, std::vector<std::string>map) : Graphics()
 {
     winY = height;
     winX = width;
@@ -12,13 +12,13 @@ WorldGui::WorldGui(int height, int width, int posY, int posX, std::vector<std::s
     setMap(map);
 };
 
-void WorldGui::draw()
+void ImagesGui::draw()
 {
     int row, col;
     char * c;
-    for(row = 0; row < 20; row++)
+    for(row = 0; row < map.size(); row++)
     {
-        for(col = 0; col < 20; col++)
+        for(col = 0; col < map[row].size(); col++)
         {
             c = &map[row].at(col);
             mvwprintw(win, row + 1, col + 1, "%c", *c);
@@ -27,7 +27,7 @@ void WorldGui::draw()
     wrefresh(win);  
 }
 
-void WorldGui::setMap(std::vector<std::string> temp)
+void ImagesGui::setMap(std::vector<std::string> temp)
 {
     map = temp;
 }

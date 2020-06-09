@@ -12,6 +12,7 @@ ADD_EXECUTABLE(gameAsciiRpg
         Graphics/src/windowGui.cpp
         Graphics/src/worldGui.cpp
         Graphics/src/actionGui.cpp
+	Graphics/src/imagesGui.cpp
 	fileReader.cpp
 
 )
@@ -19,6 +20,6 @@ ADD_EXECUTABLE(gameAsciiRpg
 ADD_EXECUTABLE(runUnitTest
     test/unit_test.cpp
 )
-
+target_link_libraries(gameAsciiRpg ${CURSES_LIBRARIES})
 TARGET_LINK_LIBRARIES(runUnitTest gtest)
 TARGET_COMPILE_DEFINITIONS(runUnitTest PRIVATE gtest_disable_pthreads=ON)

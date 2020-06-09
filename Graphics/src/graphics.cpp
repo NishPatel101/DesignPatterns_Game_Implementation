@@ -2,5 +2,5 @@
 
 Graphics::Graphics(){};
 
-virtual void Graphics::draw() = 0;
+//void Graphics::draw();
 

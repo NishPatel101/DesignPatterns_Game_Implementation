@@ -10,7 +10,7 @@ class Graphics
 {
     public:
        	Graphics();
-        virtual void draw();
+        virtual void draw() = 0;
     protected:
 	int winX;
 	int winY;

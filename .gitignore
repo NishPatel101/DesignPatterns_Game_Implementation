@@ -1,4 +1,9 @@
-# Prerequisites
+CMakeCache.txt
+CmakeFiles
+cmake_install.cmake
+Makefile
+runUnitTest
+#Prerequisites
 *.d
 
 # Compiled Object files

@@ -6,8 +6,7 @@
 class WindowGui : public Graphics
 {
     public:
-        WindowGui() : Graphics();
-	WindowGui(Graphics*, Graphics*) : Graphics();
+	WindowGui(Graphics*, Graphics*);
 	virtual void draw();
     protected:
 	Graphics * worldWin;

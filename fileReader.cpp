@@ -5,7 +5,7 @@ FileReader::FileReader()
 
 }
 
-std::vector<std::string> FileReader::loadVector(std::string)
+std::vector<std::string> FileReader::loadVector(std::string file)
 {
     std::string line;
     std::ifstream readFile(file);

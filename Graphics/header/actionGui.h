@@ -5,7 +5,7 @@
 class ActionGui : public Graphics
 {
     public:
-        ActionGui(int winY, int winX, int startPosY, int startPosX) : Graphics();
+        ActionGui(int winY, int winX, int startPosY, int startPosX);
         virtual void draw();
         void setMap(std::vector<std::string>);
     private:
