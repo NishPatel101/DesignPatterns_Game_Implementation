@@ -1,8 +1,8 @@
 #ifndef __BATTLE_H__
 #define __BATTLE_H__
 
-//#include "Equipment.h"
-//#include "Character.h"
+#include "Equipment.h"
+#include "Character.h"
 
 /*
 Character:
@@ -19,8 +19,9 @@ class Battle {
     public:
         /* Constructors */
         Battle();
+        Battle(Character* player, Character* enemy);
         
-        /* Variables */
+	/* Variables */
         getHealth();
         getDamage();
         
