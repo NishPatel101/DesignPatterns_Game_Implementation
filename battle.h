@@ -4,17 +4,6 @@
 #include "Equipment.h"
 #include "Character.h"
 
-/*
-Character:
-priv:
-string name
-int health
-
-prot:
-equipment* e;
-*/
-
-
 class Battle {    
     public:
         /* Constructors */
