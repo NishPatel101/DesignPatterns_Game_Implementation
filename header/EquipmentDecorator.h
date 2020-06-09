@@ -11,18 +11,12 @@ class EquipmentDecorator : public Equipment {
 	protected:
 		Equipment* e;
 	public:
-		EquipmentDecorator(Equipment* obj) : e(obj) {}
+		EquipmentDecorator(Equipment*);
 
-		string getDescription() {
-			return e->getDescription();
-		}
+		string getDescription();
 		
-		int getDefense() {
-			return 0; //Not implemented yet
-		}
+		int getDefense();
 		
-		int getDamage() {
-			return e->getDamage();
-		}
+		int getDamage();
 };
 #endif
