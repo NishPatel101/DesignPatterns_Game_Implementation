@@ -90,7 +90,7 @@ int main(int argc, char**argv)
     BattleVisitor * fight = new BattleVisitor(player,enemy,actionWin);
     fight->doBattle();
 
-    //battleMenu();
+    char z = getch();
     endwin();
     return 0;
 }

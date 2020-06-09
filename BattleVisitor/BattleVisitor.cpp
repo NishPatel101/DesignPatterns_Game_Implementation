@@ -63,68 +63,61 @@ void BattleVisitor::doBattle()
 
 std::string BattleVisitor::BattleMenu()
 {
-    WINDOW *w;
-    //char list[2][7] = {"Attack", "Run"};
-    char item[2];
-    std::vector<std::string>menuList;
-    menuList.push_back("Attack");
-    menuList.push_back("Run");
-    //int ch, i = 0, width = 3;
-    int userInput;
-    int i;//dont knoe what it is
+    WINDOW *menuWin;
+    menuWin = newwin( actWin->getWinY()/4, actWin->getWinX()/5, actWin->getStartPosY() + actWin->getWinY()/2, actWin->getStartPosX() + actWin->getWinX()/2 ); // create a new window
+    box( menuWin, 0, 0 ); // sets default borders for the window
 
-    w = newwin( actWin->getWinY()/4, actWin->getWinX()/5, actWin->getStartPosY() + actWin->getWinY()/2, actWin->getStartPosX() + actWin->getWinX()/2 ); // create a new window
-    box( w, 0, 0 ); // sets default borders for the window
-   
-// now print all the menu items and highlight the first one
-    //for( i=0; i<2; i++ ) 
-    for(i = 0; i < menuList.size(); i++)
-    {
-        if( i == 0 ) 
-            wattron( w, A_STANDOUT ); // highlights the first item.
-        else
-            wattroff( w, A_STANDOUT );
-        sprintf(item, "%-2s",  menuList[i]);
-        //mvwprintw( w, i+1, 2, "%s", item );
-	mvwprintw(w, i+1,2,"%s",menuList[i]);
-    }
- 
-    wrefresh( w ); // update the terminal screen
- 
-    i = 0;
-    noecho(); // disable echoing of characters on the screen
-    keypad( w, TRUE ); // enable keyboard input for the window.
-    curs_set( 0 ); // hide the default screen cursor.
-     
-       // get the input
-    //while(( ch = wgetch(w)) != '\n')
+    refresh();
+    wrefresh(menuWin);
+
+    keypad(menuWin, true);
+
+    std::string choices[2] = {"attack", "run"};
+    int choice;
+    int highlight = 0;
+
     while(1)
-    { 
-        userInput = wgetch(w);
-        // right pad with spaces to make the items appear with even width.
-        //sprintf(item, "%-7s",  list[i]); 
-        //mvwprintw( w, i+1, 2, "%s", item ); 
-        // use a variable to increment or decrement the value based on the input.
-        switch(userInput) 
-	{
+    {
+        for(int i = 0; i< 2; i++)
+        {
+            if(i == highlight)
+	    {
+                wattron(menuWin, A_REVERSE);
+	    }
+	    mvwprintw(menuWin, i+1, 1, choices[i].c_str());
+            wattroff(menuWin, A_REVERSE);
+        }
+        choice = wgetch(menuWin);
+
+        switch(choice)
+        {
             case KEY_UP:
-                i--;
-                i = ( i<0 ) ? 1 : i;
+                highlight--;
+                if(highlight == -1)
+		{
+                    highlight = 0;
+		}
+		break;
+
+	    case KEY_DOWN:
+                highlight++;
+                if(highlight ==2)
+	        {
+                    highlight = 1;
+	        }
                 break;
-            case KEY_DOWN:
-                i++;
-                i = ( i>1 ) ? 0 : i;
-	    case 10:
-		return menuList[i];
+
+            default:
                 break;
         }
-        // now highlight the next item in the list.
-        wattron( w, A_STANDOUT );
-            
-        sprintf(item, "%-2s",  menuList[i]);
-        mvwprintw( w, i+1, 2, "%s", item);
-        wattroff( w, A_STANDOUT );
-    }
+        if(choice == 10)
+	{
+            break;
+        } 
+   }
+    mvwprintw(menuWin,3,1,"%s",choices[highlight].c_str());
+    wrefresh(menuWin);
+    return choices[highlight];
 }
 
 
