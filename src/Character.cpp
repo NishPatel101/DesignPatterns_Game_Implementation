@@ -29,7 +29,7 @@ int Character::getDamage() {
 }
 
 void Character::takeDamage(int d) {
-	healh -= d;
+	health -= d;
 }
 
 void Character::addEquipment(Equipment* eq) {
