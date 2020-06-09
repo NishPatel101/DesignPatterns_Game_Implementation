@@ -1,13 +1,15 @@
 #include "../header/windowGui.h"
 
-WindowGui::WindowGui(Graphics* world, Graphics * action)
+WindowGui::WindowGui(std::vector<Graphics*> windowCollect)
 {
-    worldWin = world;
-    actionWin = action;
+    allWin = windowCollect;
 }
 
 void WindowGui::draw()
 {
-    worldWin->draw();
-    actionWin->draw();
+    int i;
+    for(i = 0; i < allWin.size();i++)
+    {
+	    allWin[i]->draw();
+    }
 }

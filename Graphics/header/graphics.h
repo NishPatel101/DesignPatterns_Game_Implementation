@@ -11,6 +11,8 @@ class Graphics
     public:
        	Graphics();
         virtual void draw() = 0;
+	int getWinX();
+        int getWinY();
     protected:
 	int winX;
 	int winY;

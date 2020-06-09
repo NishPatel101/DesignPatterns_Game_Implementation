@@ -13,6 +13,7 @@ ADD_EXECUTABLE(gameAsciiRpg
         Graphics/src/worldGui.cpp
         Graphics/src/actionGui.cpp
 	Graphics/src/imagesGui.cpp
+	Graphics/src/textGui.cpp
 	fileReader.cpp
 
 )

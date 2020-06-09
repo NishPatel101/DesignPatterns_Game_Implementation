@@ -6,11 +6,10 @@
 class WindowGui : public Graphics
 {
     public:
-	WindowGui(Graphics*, Graphics*);
+	WindowGui(std::vector<Graphics*>);
 	virtual void draw();
     protected:
-	Graphics * worldWin;
-	Graphics * actionWin;
+	std::vector<Graphics*> allWin;
 
 };
 #endif //__WINDOWGUI_H__
