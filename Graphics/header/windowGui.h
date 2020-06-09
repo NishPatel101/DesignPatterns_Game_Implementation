@@ -8,6 +8,7 @@ class WindowGui : public Graphics
     public:
 	WindowGui(std::vector<Graphics*>);
 	virtual void draw();
+	virtual void setMap(std::vector<std::string>);
     protected:
 	std::vector<Graphics*> allWin;
 

@@ -1,6 +1,6 @@
 #include "../header/worldGui.h"
 
-WorldGui::WorldGui(int height, int width, int posY, int posX, std::vector<std::string>map) : Graphics()
+WorldGui::WorldGui(int height, int width, int posY, int posX) : Graphics()
 {
     winY = height;
     winX = width;
@@ -9,7 +9,6 @@ WorldGui::WorldGui(int height, int width, int posY, int posX, std::vector<std::s
     
     win = newwin(height, width, posY, posX);
     box(win,0,0);
-    setMap(map);
 };
 
 void WorldGui::draw()

@@ -26,7 +26,6 @@ void ImagesGui::draw()
     }
     wrefresh(win);  
 }
-
 void ImagesGui::setMap(std::vector<std::string> temp)
 {
     map = temp;

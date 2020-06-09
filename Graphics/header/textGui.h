@@ -7,7 +7,7 @@ class TextGui : public Graphics
     public:
         TextGui(int winY, int winX, int startPosY, int startPosX);
         virtual void draw();
-        void setMap(std::vector<std::string>);
+        virtual void setMap(std::vector<std::string>);
     private:
         WINDOW* win;
         std::vector<std::string>map;

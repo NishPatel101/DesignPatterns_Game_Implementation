@@ -13,3 +13,8 @@ void WindowGui::draw()
 	    allWin[i]->draw();
     }
 }
+
+void WindowGui::setMap(std::vector<std::string>)
+{
+
+}

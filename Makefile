@@ -234,6 +234,60 @@ gtest/fast:
 	$(MAKE) -f googletest/googletest/CMakeFiles/gtest.dir/build.make googletest/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
+FileRead/fileReader.o: FileRead/fileReader.cpp.o
+
+.PHONY : FileRead/fileReader.o
+
+# target to build an object file
+FileRead/fileReader.cpp.o:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/FileRead/fileReader.cpp.o
+.PHONY : FileRead/fileReader.cpp.o
+
+FileRead/fileReader.i: FileRead/fileReader.cpp.i
+
+.PHONY : FileRead/fileReader.i
+
+# target to preprocess a source file
+FileRead/fileReader.cpp.i:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/FileRead/fileReader.cpp.i
+.PHONY : FileRead/fileReader.cpp.i
+
+FileRead/fileReader.s: FileRead/fileReader.cpp.s
+
+.PHONY : FileRead/fileReader.s
+
+# target to generate assembly for a file
+FileRead/fileReader.cpp.s:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/FileRead/fileReader.cpp.s
+.PHONY : FileRead/fileReader.cpp.s
+
+GameBoard/gameBoard.o: GameBoard/gameBoard.cpp.o
+
+.PHONY : GameBoard/gameBoard.o
+
+# target to build an object file
+GameBoard/gameBoard.cpp.o:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/GameBoard/gameBoard.cpp.o
+.PHONY : GameBoard/gameBoard.cpp.o
+
+GameBoard/gameBoard.i: GameBoard/gameBoard.cpp.i
+
+.PHONY : GameBoard/gameBoard.i
+
+# target to preprocess a source file
+GameBoard/gameBoard.cpp.i:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/GameBoard/gameBoard.cpp.i
+.PHONY : GameBoard/gameBoard.cpp.i
+
+GameBoard/gameBoard.s: GameBoard/gameBoard.cpp.s
+
+.PHONY : GameBoard/gameBoard.s
+
+# target to generate assembly for a file
+GameBoard/gameBoard.cpp.s:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/GameBoard/gameBoard.cpp.s
+.PHONY : GameBoard/gameBoard.cpp.s
+
 Graphics/src/actionGui.o: Graphics/src/actionGui.cpp.o
 
 .PHONY : Graphics/src/actionGui.o
@@ -396,6 +450,33 @@ Graphics/src/worldGui.cpp.s:
 	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/Graphics/src/worldGui.cpp.s
 .PHONY : Graphics/src/worldGui.cpp.s
 
+PlayerController/playerController.o: PlayerController/playerController.cpp.o
+
+.PHONY : PlayerController/playerController.o
+
+# target to build an object file
+PlayerController/playerController.cpp.o:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/PlayerController/playerController.cpp.o
+.PHONY : PlayerController/playerController.cpp.o
+
+PlayerController/playerController.i: PlayerController/playerController.cpp.i
+
+.PHONY : PlayerController/playerController.i
+
+# target to preprocess a source file
+PlayerController/playerController.cpp.i:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/PlayerController/playerController.cpp.i
+.PHONY : PlayerController/playerController.cpp.i
+
+PlayerController/playerController.s: PlayerController/playerController.cpp.s
+
+.PHONY : PlayerController/playerController.s
+
+# target to generate assembly for a file
+PlayerController/playerController.cpp.s:
+	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/PlayerController/playerController.cpp.s
+.PHONY : PlayerController/playerController.cpp.s
+
 asciiRpg.o: asciiRpg.cpp.o
 
 .PHONY : asciiRpg.o
@@ -422,33 +503,6 @@ asciiRpg.s: asciiRpg.cpp.s
 asciiRpg.cpp.s:
 	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/asciiRpg.cpp.s
 .PHONY : asciiRpg.cpp.s
-
-fileReader.o: fileReader.cpp.o
-
-.PHONY : fileReader.o
-
-# target to build an object file
-fileReader.cpp.o:
-	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/fileReader.cpp.o
-.PHONY : fileReader.cpp.o
-
-fileReader.i: fileReader.cpp.i
-
-.PHONY : fileReader.i
-
-# target to preprocess a source file
-fileReader.cpp.i:
-	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/fileReader.cpp.i
-.PHONY : fileReader.cpp.i
-
-fileReader.s: fileReader.cpp.s
-
-.PHONY : fileReader.s
-
-# target to generate assembly for a file
-fileReader.cpp.s:
-	$(MAKE) -f CMakeFiles/gameAsciiRpg.dir/build.make CMakeFiles/gameAsciiRpg.dir/fileReader.cpp.s
-.PHONY : fileReader.cpp.s
 
 test/unit_test.o: test/unit_test.cpp.o
 
@@ -495,6 +549,12 @@ help:
 	@echo "... gmock"
 	@echo "... gtest_main"
 	@echo "... gtest"
+	@echo "... FileRead/fileReader.o"
+	@echo "... FileRead/fileReader.i"
+	@echo "... FileRead/fileReader.s"
+	@echo "... GameBoard/gameBoard.o"
+	@echo "... GameBoard/gameBoard.i"
+	@echo "... GameBoard/gameBoard.s"
 	@echo "... Graphics/src/actionGui.o"
 	@echo "... Graphics/src/actionGui.i"
 	@echo "... Graphics/src/actionGui.s"
@@ -513,12 +573,12 @@ help:
 	@echo "... Graphics/src/worldGui.o"
 	@echo "... Graphics/src/worldGui.i"
 	@echo "... Graphics/src/worldGui.s"
+	@echo "... PlayerController/playerController.o"
+	@echo "... PlayerController/playerController.i"
+	@echo "... PlayerController/playerController.s"
 	@echo "... asciiRpg.o"
 	@echo "... asciiRpg.i"
 	@echo "... asciiRpg.s"
-	@echo "... fileReader.o"
-	@echo "... fileReader.i"
-	@echo "... fileReader.s"
 	@echo "... test/unit_test.o"
 	@echo "... test/unit_test.i"
 	@echo "... test/unit_test.s"

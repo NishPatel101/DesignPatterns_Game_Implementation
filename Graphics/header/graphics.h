@@ -11,6 +11,7 @@ class Graphics
     public:
        	Graphics();
         virtual void draw() = 0;
+	virtual void setMap(std::vector<std::string>) = 0;
 	int getWinX();
         int getWinY();
     protected:

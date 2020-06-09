@@ -26,7 +26,15 @@ void PlayerController::mvLeft()
 
 int PlayerController::getMv()
 {
-    return xPos;
+   
 }
 
+int PlayerController::getPosX()
+{
+   return localPosX;
+}
+int PlayerController::getPosY()
+{
+   return localPosY;
+}
 

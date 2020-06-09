@@ -1,7 +1,7 @@
 #ifndef __PLAYERCONTROLLER_H__
 #define __PLAYERCONTROLLER_H__
 
-#include "gameBoard.h"
+#include "../GameBoard/gameBoard.h"
 
 class PlayerController
 {
@@ -12,9 +12,13 @@ class PlayerController
 	     void mvDown();
 	     void mvLeft();
 	     int getMv();
+	     int getPosX();
+	     int getPosY();
+
 
      private:
 	 int localPosX,localPosY;
 
 
-}
+};
+#endif //__PLAYERCONTROLLER_H__

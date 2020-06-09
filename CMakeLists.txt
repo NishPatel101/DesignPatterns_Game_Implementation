@@ -14,7 +14,9 @@ ADD_EXECUTABLE(gameAsciiRpg
         Graphics/src/actionGui.cpp
 	Graphics/src/imagesGui.cpp
 	Graphics/src/textGui.cpp
-	fileReader.cpp
+	GameBoard/gameBoard.cpp
+	PlayerController/playerController.cpp
+	FileRead/fileReader.cpp
 
 )
 
