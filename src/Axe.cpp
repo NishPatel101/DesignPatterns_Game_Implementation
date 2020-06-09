@@ -1,4 +1,4 @@
-#include "..header/Axe.h"
+#include "../header/Axe.h"
 
 using namespace std;
 
