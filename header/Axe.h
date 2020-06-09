@@ -9,7 +9,7 @@ using namespace std;
 
 //CONCRETE COMPONENT
 
-class Axe : Equipment {
+class Axe : public Equipment {
 	public:
 		string getDescription();
 		
