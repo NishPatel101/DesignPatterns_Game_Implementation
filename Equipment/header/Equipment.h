@@ -9,8 +9,6 @@ using namespace std;
 
 class Equipment {
         public:
-                Equipment() {};
-
                 virtual string getDescription() = 0;
                 virtual int getDefense() = 0;
                 virtual int getDamage() = 0;
