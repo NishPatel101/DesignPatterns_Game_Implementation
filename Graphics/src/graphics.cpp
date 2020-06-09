@@ -13,3 +13,13 @@ int Graphics::getWinY()
 {
 	return winY;
 }
+
+int Graphics::getStartPosY()
+{
+	return startPosY;
+}
+
+int Graphics::getStartPosX()
+{
+	return startPosX;
+}

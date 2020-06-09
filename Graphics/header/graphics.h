@@ -14,6 +14,8 @@ class Graphics
 	virtual void setMap(std::vector<std::string>) = 0;
 	int getWinX();
         int getWinY();
+	int getStartPosY();
+	int getStartPosX();
     protected:
 	int winX;
 	int winY;
