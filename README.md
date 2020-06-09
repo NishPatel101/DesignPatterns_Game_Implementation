@@ -30,7 +30,7 @@ Interesting?
 
 
 ## Class diagram of the project
-![GitHub Logo](ASCII_RPG_Diagram.png)
+![GitHub Logo](ASCII_RPG_Diagram2.png)
 
 
 
