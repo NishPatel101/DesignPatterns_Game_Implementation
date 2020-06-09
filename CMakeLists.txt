@@ -28,6 +28,13 @@ ADD_EXECUTABLE(gameAsciiRpg
 )
 
 ADD_EXECUTABLE(runUnitTest
+    Character/Character.cpp
+    Equipment/Axe.cpp
+    Equipment/Deadly.cpp
+    Equipment/EquipmentDecorator.cpp
+    Equipment/Flimsy.cpp
+    Equipment/Mighty.cpp
+    Equipment/Sword.cpp
     test/unit_test.cpp
 )
 target_link_libraries(gameAsciiRpg ${CURSES_LIBRARIES})
