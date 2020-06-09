@@ -2,7 +2,6 @@
 #define __USERINPUT_H__
 
 #include "Battle.h"
-#include "Battle.h"
 
 class UserInput {
     protected:
